@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <context-param>
+        <param-name>database</param-name>
+        <param-value>jdbc:derby://localhost:1527/polynomialderivatives</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>polynomial</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>polynomial</param-value>
+    </context-param>
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>CalculationServlet</servlet-name>
+        <servlet-class>polynomialderivativesweb.CalculationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HistoryServlet</servlet-name>
+        <servlet-class>polynomialderivativesweb.HistoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalculationServlet</servlet-name>
+        <url-pattern>/CalculationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HistoryServlet</servlet-name>
+        <url-pattern>/HistoryServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            1
+        </session-timeout>
+    </session-config>
+</web-app>

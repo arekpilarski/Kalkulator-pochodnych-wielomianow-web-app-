@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-11-28, 11:34:19
+    Author     : Arkadiusz
+*/
+
+h2 {
+    text-align: center;
+    font-family: fantasy;
+    color: greenyellow;
+}
+h1 {
+    font-style:italic;
+    font-size: 10px;
+}
+h6 {
+    font-style:oblique;
+    color: greenyellow;
+    font-size: 15px;
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+}
+.nowa {
+    background-color: black;
+    width: 50%;
+    color: greenyellow;
+    text-align:center;
+}
+.nowa2 {
+    background-color: black;
+    width: 50%;
+    color: greenyellow;
+    text-align:center;
+}
+
+.nowa3 {
+    text-align: center;
+}
+
+
+
